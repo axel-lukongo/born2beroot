@@ -1,0 +1,32 @@
+			Configuation
+
+1) first of all we need install a OS (debian) with virtualbox and i configure it.
+2) in the seconde time i install the sudo, i add the user in the sudo group 1(su -) 2(usermod -aG sudo my_username)
+for tcheck if the user has been add is the commande getent group sudo.
+3) now i give all privilege to the user, first i make a sudo visudo(for open the rules of the sudo), and i add this line (my_username ALL=(ALL) ALL)
+4) After this i can now start to install all tools who i gone use (wget,vim(or emacs), ssh...).
+5) when the ssh is installed i have to change the port 22 to 4242, so i open with emacs and i change port 22 to 4242.
+6) i install the ufw, a ufw is a a program who organise the firewall netfilter, a firewall is like a wall who regulate the accessibilty to other server in our sever.
+
+
+
+			change password policy:
+
+1) i need to install libpam-pwquality, this is a password quality checking library
+2) i open the file /etc/pam.d/common-password with emacs and i change what i need the change.
+3) for the password expiration i open /etc/login.defs still with emacs and i change the time...
+when all of it, it finish i reboot my VM.
+
+
+
+			Creat a group
+
+1)the commande for do this is "sudo groupadd user42", "sudo groupadd evaluating"
+2) for tcheck if the group has been creat i hit the commande "getent group"
+
+			Creat a user and assign it to a group
+
+1) "cut -d: -f1 /etc/passwd" this is for tcheck all local user
+2) i creat a user with $ sudo adduser new_username.
+3) this is for add a user in groupe "sudo usermod -aG user42 your_username" "sudo usermod -aG evoluting your_new_username"
+and for tcheck if the user has been add in group i use this commande "getent group user42" "getent group evoluting"
