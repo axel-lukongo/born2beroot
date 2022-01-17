@@ -24,9 +24,43 @@ when all of it, it finish i reboot my VM.
 1)the commande for do this is "sudo groupadd user42", "sudo groupadd evaluating"
 2) for tcheck if the group has been creat i hit the commande "getent group"
 
+
+
 			Creat a user and assign it to a group
 
 1) "cut -d: -f1 /etc/passwd" this is for tcheck all local user
 2) i creat a user with $ sudo adduser new_username.
 3) this is for add a user in groupe "sudo usermod -aG user42 your_username" "sudo usermod -aG evoluting your_new_username"
 and for tcheck if the user has been add in group i use this commande "getent group user42" "getent group evoluting"
+
+
+
+			Config sudoers group
+
+1) Defaults     passwd_tries=3 (3 tentative for mdp)
+2) Defaults     badpass_message="Password is wrong, please try again!"
+3) Defaults	logfile="/var/log/sudo/sudo.log" (where i save action what we do for log)
+4) Defaults	log_input,log_output
+
+
+
+			change hostname
+
+1) hostnamectl (it for check the current hostname)
+2) hostnamectl set-hostname new_hostname (it for change the hostname)
+3) sudo nano /etc/hosts (that where the name of the host it write and i had to change it with the new hostname)
+4) sudo reboot (after change this i reebot my VM with this commande)
+
+
+			crontab Configuation
+
+1) sudo apt-get install -y net-tools
+2) i creat a file monitoring.sh in /usr/local/bin/ and i write my script in
+3) add the line "your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh" in the sudoers
+4) i reboot
+5) add this line "*/10 * * * * /usr/local/bin/monitoring.sh" in the crontab when you open it with "sudo -u root -e"
+
+
+acf904f01c707a1c702adb2d517a8097e39510b5  born2beroot.vbox
+shasum born2beroot.vbox (for get the signature)
+
