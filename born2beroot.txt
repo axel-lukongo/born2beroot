@@ -64,3 +64,31 @@ and for tcheck if the user has been add in group i use this commande "getent gro
 acf904f01c707a1c702adb2d517a8097e39510b5  born2beroot.vbox
 shasum born2beroot.vbox (for get the signature)
 
+
+
+			evaluation part
+
+why debian ?
+because is more easy to install and configurate than centos
+
+
+what a virtual machine ?
+a virtual machine is a similation of a camputer who use who use the ressource of the physical computer to run programs.
+
+
+what it purpose ?
+it mean you can try what you want in this vm without it acted on your computer.
+
+
+how it does it work ?
+it work with virtualization technology, so it use the software of the computer to simulate a virtual hardware
+
+
+difference between apt and aptitude ?
+apt it a lower-level package manager and aptitude it a hight-level package manager and the hight-level package can use the lower-level package.
+
+what is appmore ?
+appmore is a (application armor), is a linux kernel security module that allow the administrator to restrict program capability of other user
+
+what a ssh ?
+ssh is a program and a secure socket shell, so is for the network secure communication protocol with the concept of the keys exchange.
