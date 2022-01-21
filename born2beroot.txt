@@ -86,9 +86,12 @@ it work with virtualization technology, so it use the software of the computer t
 
 difference between apt and aptitude ?
 apt it a lower-level package manager and aptitude it a hight-level package manager and the hight-level package can use the lower-level package.
+aptitude est plus haut niveau car il a un interface ou tu peut reelement gerer avec precision tes package
+alors que apt c'est uniquement en ligne de commande
 
 what is appmore ?
 appmore is a (application armor), is a linux kernel security module that allow the administrator to restrict program capability of other user
 
 what a ssh ?
 ssh is a program and a secure socket shell, so is for the network secure communication protocol with the concept of the keys exchange.
+(en realite c'est pour pouvoir se connecter a une machine a distance en toute securite)
